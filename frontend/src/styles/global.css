@@ -35,3 +35,35 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+
+/* 批量上交 */
+.rule-box { background: #fff; border: 1px dashed var(--border); border-radius: 8px; padding: 8px 12px; margin-bottom: 12px; }
+.rule-title { font-size: 13px; font-weight: 600; margin: 2px 0 6px; }
+.rule-list { margin: 0; padding-left: 18px; font-size: 12px; color: var(--muted); line-height: 1.8; }
+.rule-list b { color: #b42318; font-weight: 600; }
+.batch-bar { display: flex; justify-content: space-between; align-items: center; gap: 10px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; margin-bottom: 10px; flex-wrap: wrap; }
+.select-all { font-size: 13px; display: flex; align-items: center; gap: 6px; }
+.batch-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.col-check { width: 40px; text-align: center; }
+.data-table .col-check input { margin: 0; }
+.status-tag { border-radius: 999px; padding: 2px 10px; font-size: 12px; background: #eef2f7; color: var(--muted); white-space: nowrap; }
+.status-tag.is-ok { background: #e7f6ec; color: #177245; }
+.status-tag.is-abnormal { background: #fdecec; color: #b42318; }
+.status-tag.is-done { background: #e8f0fe; color: #1f6feb; }
+.tag { border-radius: 4px; padding: 0 6px; font-size: 11px; margin-left: 4px; }
+.tag-returned { background: #fdecec; color: #b42318; }
+.row-returned { background: #fff7f7; }
+.return-reason { display: block; font-size: 12px; color: #b42318; margin-top: 4px; }
+.result-panel { background: #fff; border: 1px solid var(--border); border-left: 3px solid var(--brand); border-radius: 8px; padding: 10px 12px; margin-top: 12px; }
+.result-title { margin: 0 0 8px; font-size: 13px; font-weight: 600; }
+.result-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.result-list li { display: flex; gap: 8px; align-items: baseline; font-size: 13px; flex-wrap: wrap; }
+.result-state { flex: none; border-radius: 4px; padding: 0 8px; font-size: 12px; background: #eef2f7; color: var(--muted); }
+.result-code { flex: none; color: var(--muted); }
+.result-msg { color: #1f2937; }
+.result-list li.is-success .result-state { background: #e7f6ec; color: #177245; }
+.result-list li.is-skipped .result-state { background: #fdf3e2; color: #b25e09; }
+.result-list li.is-returned .result-state,
+.result-list li.is-rejected .result-state { background: #fdecec; color: #b42318; }
+.result-list li.is-duplicate .result-state { background: #e8f0fe; color: #1f6feb; }

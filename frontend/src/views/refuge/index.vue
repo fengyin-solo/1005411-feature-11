@@ -82,7 +82,7 @@ import {
 import type { EntryRow } from '@/data/types'
 
 const meta = moduleMeta('refuge')
-const columns = ["场所编号", "场所名称", "可容纳人数", "开放条件", "场所负责人", "联系电话", "启用日期", "场所状态"]
+const columns = ["场所编号", "场所名称", "待核项", "可容纳人数", "开放条件", "场所负责人", "联系电话", "启用日期", "场所状态"]
 const actions = ["提交核验", "确认启用", "办理关闭"]
 const statuses = ["待核验", "可启用", "已启用", "已关闭"]
 const stats = [{"label": "可启用场所", "value": 0}, {"label": "已启用场所", "value": 0}, {"label": "可容纳人数合计", "value": 0}]
